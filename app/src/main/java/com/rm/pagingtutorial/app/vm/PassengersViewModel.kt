@@ -20,7 +20,7 @@ class PassengersViewModel @Inject constructor(
     private val _passengerList = MutableStateFlow(Passenger())
     val passengerList: StateFlow<Passenger> = _passengerList
 
-    suspend fun getPassengerData() = useCase.execute().map { pagingData ->
+    fun getPassengerData() = useCase.execute().map { pagingData ->
         pagingData.map {
             it
         }

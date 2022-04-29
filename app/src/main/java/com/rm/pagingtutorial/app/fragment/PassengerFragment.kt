@@ -19,12 +19,9 @@ import kotlinx.coroutines.flow.collectLatest
 class PassengerFragment : Fragment() {
 
     private val mListViewModel: PassengersViewModel by viewModels()
-
-
     private var _binding: FragmentStockBinding? = null
     private val mBinding: FragmentStockBinding
         get() = _binding!!
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

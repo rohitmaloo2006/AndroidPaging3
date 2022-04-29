@@ -12,7 +12,7 @@ import kotlinx.coroutines.flow.map
 import javax.inject.Inject
 
 class PassengerUseCase @Inject constructor(private val passengerRepository: PassengerRepository) {
-    suspend fun execute(): Flow<PagingData<Passenger>> {
+    fun execute(): Flow<PagingData<Passenger>> {
         return passengerRepository.loadPassenger().map { pagingData ->
             pagingData.map { data ->
                 PassengerMapper().convert(data)

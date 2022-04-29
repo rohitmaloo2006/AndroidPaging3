@@ -1,4 +1,4 @@
-package com.rm.pagingtutorial.data.repository
+package com.rm.pagingtutorial.data.datasource
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState

@@ -5,5 +5,5 @@ import com.rm.pagingtutorial.data.dto.Data
 import kotlinx.coroutines.flow.Flow
 
 interface PassengerRepository {
-    suspend fun loadPassenger(): Flow<PagingData<Data>>
+    fun loadPassenger(): Flow<PagingData<Data>>
 }
